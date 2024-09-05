@@ -11,9 +11,7 @@ endif()
 
 project ("Eidolon")
 
-# Include sub-projects.
-add_subdirectory ("Eidolon")
-
 find_package(OpenCV REQUIRED)
 
-include_directories(${OpenCV_INCLUDE_DIRS})
+# Include sub-projects.
+add_subdirectory ("Eidolon")
